@@ -1,0 +1,1 @@
+import{Ba as t,b as a,qa as i}from"./chunk-7BSJAR77.js";var e=a(t(),1);function u({credit:r}){return r?(0,e.jsxs)("p",{className:"image-credit",children:[(0,e.jsx)(i,{"aria-hidden":"true"})," Picture by ",r]}):null}export{u as a};

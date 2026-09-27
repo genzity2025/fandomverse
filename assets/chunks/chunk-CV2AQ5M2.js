@@ -1,0 +1,1 @@
+function d(n,o){let i=new FileReader;i.onload=()=>{let e=new Image;e.onload=()=>{let t=document.createElement("canvas");t.width=240,t.height=240;let a=Math.min(e.width,e.height);t.getContext("2d").drawImage(e,(e.width-a)/2,(e.height-a)/2,a,a,0,0,240,240),o(t.toDataURL("image/jpeg",.85))},e.src=i.result},i.readAsDataURL(n)}export{d as a};

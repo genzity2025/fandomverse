@@ -1,0 +1,1 @@
+function a(t){try{return window[t]}catch{return null}}function c(t,e,r="localStorage"){try{let n=a(r)?.getItem(t);return n?JSON.parse(n.replace(/(images\/[\w./-]+)\.(jpg|jpeg|png)/g,"$1.webp")):e}catch{return e}}function o(t,e,r="localStorage"){try{a(r)?.setItem(t,JSON.stringify(e))}catch{return!1}return!0}export{c as a,o as b};

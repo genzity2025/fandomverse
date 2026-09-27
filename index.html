@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FandomVerse | Portal for the Fandom World</title>
+    <meta name="description" content="FandomVerse brings anime, gaming, movies, TV shows, K-Pop, comics and manga together in one place: articles, characters, trailers, events and merch." />
+    <meta name="theme-color" content="#07080d" />
+    <meta property="og:title" content="FandomVerse | Portal for the Fandom World" />
+    <meta property="og:description" content="Anime, gaming, movies, TV shows, K-Pop, comics and manga in one place." />
+    <meta property="og:image" content="images/logo-mark.webp" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" />
+    </noscript>
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #05060a;
+        color: #f4f5f9;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      .splash {
+        min-height: 100vh;
+        min-height: 100dvh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 18px clamp(16px, 4vw, 56px);
+        background: radial-gradient(circle at 20% 10%, rgba(255, 46, 77, 0.22), transparent 55%), #05060a;
+      }
+      .splash-logo {
+        font: 800 1.35rem/1 Poppins, system-ui, sans-serif;
+        letter-spacing: -0.02em;
+      }
+      .splash-logo b {
+        color: #ff2e4d;
+      }
+      .splash-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 14px;
+        padding-bottom: 12vh;
+      }
+      .splash h1 {
+        margin: 0;
+        font: 800 clamp(2.6rem, 8vw, 5rem) / 1.02 Poppins, system-ui, sans-serif;
+        letter-spacing: -0.03em;
+      }
+      .splash h1 span {
+        display: block;
+        color: #ff2e4d;
+      }
+      .splash p {
+        margin: 0;
+        max-width: 40ch;
+        color: #d9dbe5;
+        font-size: clamp(1.15rem, 2.4vw, 1.35rem);
+        line-height: 1.6;
+      }
+      .splash-bar {
+        width: 120px;
+        height: 4px;
+        border-radius: 4px;
+        background: linear-gradient(90deg, #ff2e4d, #ff3d7f);
+        opacity: 0.85;
+      }
+    </style>
+    <script>
+      (function () {
+        var h = location.hash
+        if (!h || h === '#' || h === '#/') return
+        var files = 'categories titles articles characters gallery media events merch releases community chatbot team comments fanart fvevents cinema comiccons songs downloads'.split(' ')
+        for (var i = 0; i < files.length; i++) {
+          var l = document.createElement('link')
+          l.rel = 'preload'
+          l.as = 'fetch'
+          l.crossOrigin = 'anonymous'
+          l.href = 'data/' + files[i] + '.json'
+          document.head.appendChild(l)
+        }
+      })()
+    </script>
+  <link rel="modulepreload" href="assets/main.js" /><link rel="modulepreload" href="assets/chunks/chunk-7BSJAR77.js" /><link rel="modulepreload" href="assets/chunks/chunk-DHNSJTVI.js" /><link rel="modulepreload" href="assets/chunks/chunk-E7BZJVJH.js" /><link rel="modulepreload" href="assets/chunks/chunk-MU7ATHYZ.js" /><link rel="modulepreload" href="assets/chunks/chunk-QPZV3E56.js" /><link rel="modulepreload" href="assets/chunks/chunk-RATP4S4D.js" /><link rel="modulepreload" href="assets/chunks/chunk-UI6VKEG2.js" /><link rel="modulepreload" href="assets/chunks/chunk-W26DGMDH.js" /><link rel="preload" href="assets/main.css" as="style" /><link rel="stylesheet" href="assets/main.css" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="assets/main.css" /></noscript></head>
+  <body>
+    <div id="root">
+      <div class="splash">
+        <div class="splash-logo">Fandom<b>Verse</b></div>
+        <div class="splash-body">
+          <h1>Discover Your <span>Fandom World</span></h1>
+          <p>Anime, gaming, movies, TV shows, K-Pop, comics and manga, all in one place. Read the latest news, meet the characters, watch trailers, check upcoming releases and events, and shop fandom merch.</p>
+          <div class="splash-bar"></div>
+        </div>
+      </div>
+    </div>
+    <noscript>FandomVerse needs JavaScript turned on to work.</noscript>
+    <script type="module" src="assets/main.js"></script>
+  </body>
+</html>
